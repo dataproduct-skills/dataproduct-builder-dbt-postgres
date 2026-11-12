@@ -1,0 +1,21 @@
+{
+  "name": "dataproduct-builder-dbt-postgres",
+  "interface": {
+    "displayName": "Data Product Builder Plugins",
+    "shortDescription": "Coding-agent plugins from Entropy Data."
+  },
+  "plugins": [
+    {
+      "name": "dataproduct-builder-dbt-postgres",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/dataproduct-skills/dataproduct-builder-dbt-postgres.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Data"
+    }
+  ]
+}

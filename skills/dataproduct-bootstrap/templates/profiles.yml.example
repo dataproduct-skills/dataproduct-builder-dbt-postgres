@@ -1,0 +1,13 @@
+{{DBT_PROJECT_NAME}}:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: {{PG_HOST}}
+      port: {{PG_PORT}}
+      user: {{PG_USER}}
+      password: "{{ env_var('POSTGRES_PASSWORD') }}"   # read from the environment, never written here
+      dbname: {{PG_DATABASE}}
+      schema: {{SCHEMA}}
+      sslmode: require                               # use `disable` only for a local database
+      threads: 4
